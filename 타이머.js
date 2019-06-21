@@ -1,8 +1,12 @@
-const json = require('./setting.json')
-var h = json.h
-var m = json.m
-var s = json.s
-var stop2 = []
+<head>
+    <title>타이머!</title>
+</head>
+<body>
+    <script>
+ const json = require('./setting.json')
+var h = alert('타이머의 "시"부분입니다! 0~24 중 골라주세요!')
+var m = alert('타이머의 "분"부분입니다! 0~59 중 골라주세요!')
+var s = alert('타이머의 "초"부분입니다! 0~59 중 골라주세요!')
 s++
 if (h > 24) {
     console.log('제대로된 시간으로 설정해주세요')
@@ -20,6 +24,9 @@ if (h > 24) {
     console.log('제대로된 시간으로 설정해주세요')
     return
 } else if (s > 60) {
+    console.log('제대로된 시간으로 설정해주세요')
+    return
+} else if (m > 59) {
     console.log('제대로된 시간으로 설정해주세요')
     return
 }else if(!m && s){
@@ -70,3 +77,5 @@ var stop = setInterval(() => {
         }
     }
 }, 1000);
+    </script>
+</body>
