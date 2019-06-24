@@ -3,7 +3,7 @@ setlocal
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :LOOP
-set /p YN=NODE.JS°¡ ¼³Ä¡ µÇ¾îÀÖ³ª¿ä? (Y/N)
+set /p YN=NODE.JSê°€ ì„¤ì¹˜ ë˜ì–´ìˆë‚˜ìš”? (Y/N)
 
 if /i "%YN%" == "y" goto YES
 if /i "%YN%" == "n" goto NO
@@ -13,13 +13,13 @@ goto LOOP
 
 
 :YES
-node Å¸ÀÌ¸Ó.js
-
+node íƒ€ì´ë¨¸.js
+start d.vbs
 :NO
 start https://nodejs.org/dist/v10.14.1/node-v10.14.1-x64.msi
 cls
-echo node.js ¼³Ä¡±â¸¦ ¼³Ä¡ÁßÀÔ´Ï´Ù.
-echo node.js ¸¦ ¼³Ä¡ÈÄ ´Ù½Ã ÁøÇàÇØÁÖ¼¼¿ä!
+echo node.js ì„¤ì¹˜ê¸°ë¥¼ ì„¤ì¹˜ì¤‘ì…ë‹ˆë‹¤.
+echo node.js ë¥¼ ì„¤ì¹˜í›„ ë‹¤ì‹œ ì§„í–‰í•´ì£¼ì„¸ìš”!
 pause
 goto QUIT
 pause
