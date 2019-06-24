@@ -1,3 +1,3 @@
 @echo off
 node ≈∏¿Ã∏”.js
-pause
+start d.vbs
